@@ -1,4 +1,4 @@
-## Acerca de.
+## Acerca de...
 
 Con una instalación de Laravel 5.4 como base, agrega los paquetes de laravel socialite y laravel echo
 - [Socialite](https://github.com/laravel/socialite)
