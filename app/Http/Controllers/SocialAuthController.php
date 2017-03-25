@@ -34,17 +34,18 @@ class SocialAuthController extends Controller
             $state = $this->request->get('state');
             $this->request->session()->put('state',$state);
         }
-
-        $email = $userData->email ?? $userData->user->email;
+        
+        dd($userData);
+    /*    $email = $userData->email ?? $userData->user->email;
 
         $username =  $userData->name ?? $userData->user['first_name'] . $userData->user['last_name'];
 
         $user = User::updateOrCreate(
             ['provider_id' => $userData->id],
             ['provider_id' => $userData->id, 'name' => $username, 'email' => $email, 'image' => $userData->avatar]
-        );
+        ); 
 
-        $this->auth->login($user, true);
+        $this->auth->login($user, true); */
 
         return redirect()->intended('/');
     }
